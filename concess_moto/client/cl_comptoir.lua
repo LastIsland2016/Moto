@@ -173,7 +173,7 @@ function MenuListeVehMoto()
                         lib.registerContext({
                             title = "Options",
                             id = 'gestion_véhicule-choice',
-                            menu = 'list_veh',
+                            menu = 'list_moto',
                             options = {
                                 {
                                     title = v.name,
@@ -236,7 +236,7 @@ function MenuListeVehMoto()
                     end
                 })
                 lib.registerContext({
-                    id = 'list_veh',
+                    id = 'list_moto',
                     title = "Liste des véhicules",
                     menu = 'MenuLists',
                     filter = Config.FilterUse,
@@ -244,11 +244,11 @@ function MenuListeVehMoto()
                        
                 })
             end 
-            lib.showContext('list_veh')
+            lib.showContext('list_moto')
         else 
             lib.registerContext({
-                id = 'list_veh',
-                title = "Liste des véhicules",
+                id = 'list_moto',
+                title = "Liste des Moto",
                 menu = 'MenuLists',
                 options = {
                     {
@@ -258,7 +258,7 @@ function MenuListeVehMoto()
                 }
                    
             })
-            lib.showContext('list_veh')
+            lib.showContext('list_moto')
         end
         
     end)
